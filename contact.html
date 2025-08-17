@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Appointments - Metro Grace International Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="back.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Metro Grace International Church</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="youth.html" class="nav-link">Youth</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="glass-card">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you and connect with you personally</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <div class="glass-card">
+                <h2>Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h3>Visit Us</h3>
+                        <p><strong>Address:</strong><br>
+                        123 Grace Avenue<br>
+                        City, State 12345</p>
+                        <p><strong>Service Times:</strong><br>
+                        Sunday: 9:00 AM & 11:00 AM<br>
+                        Wednesday: 7:00 PM<br>
+                        Friday Youth: 6:30 PM</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Call Us</h3>
+                        <p><strong>Main Office:</strong><br>
+                        (555) 123-4567</p>
+                        <p><strong>Emergency Prayer Line:</strong><br>
+                        (555) 123-PRAY</p>
+                        <p><strong>Youth Pastor:</strong><br>
+                        (555) 123-YOUTH</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Email Us</h3>
+                        <p><strong>General Info:</strong><br>
+                        info@metrograce.org</p>
+                        <p><strong>Prayer Requests:</strong><br>
+                        prayer@metrograce.org</p>
+                        <p><strong>Pastor:</strong><br>
+                        pastor@metrograce.org</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Scheduling Form -->
+        <section class="appointment-section">
+            <div class="glass-card">
+                <h2>Schedule an Appointment</h2>
+                <p>We'd love to meet with you personally. Whether you need prayer, counseling, or just want to chat, our pastoral team is here for you.</p>
+                
+                <form class="appointment-form" id="appointmentForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentType">Type of Appointment *</label>
+                            <select id="appointmentType" name="appointmentType" required>
+                                <option value="">Select appointment type</option>
+                                <option value="pastoral-counseling">Pastoral Counseling</option>
+                                <option value="prayer">Prayer Session</option>
+                                <option value="new-member">New Member Information</option>
+                                <option value="wedding">Wedding Consultation</option>
+                                <option value="baptism">Baptism Discussion</option>
+                                <option value="general">General Meeting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Time *</label>
+                            <select id="preferredTime" name="preferredTime" required>
+                                <option value="">Select preferred time</option>
+                                <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                                <option value="evening">Evening (5:00 PM - 8:00 PM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pastor">Preferred Pastor</label>
+                            <select id="pastor" name="pastor">
+                                <option value="">No preference</option>
+                                <option value="pastor-john">Pastor John Smith (Senior Pastor)</option>
+                                <option value="pastor-sarah">Pastor Sarah Johnson (Associate Pastor)</option>
+                                <option value="pastor-mike">Pastor Mike Davis (Youth Pastor)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Please share any additional details about your appointment request or specific topics you'd like to discuss..."></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <span class="checkmark"></span>
+                            I consent to Metro Grace International Church contacting me about my appointment request *
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Schedule Appointment</button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Quick Contact Form -->
+        <section class="quick-contact">
+            <div class="glass-card">
+                <h2>Send Us a Message</h2>
+                <p>Have a quick question or want to share something with us? Send us a message below.</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Name *</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="Share your thoughts, questions, or prayer requests with us..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="glass-card">
+                <h2>Find Us</h2>
+                <p>Located in the heart of our community, we're easy to find and always welcoming visitors.</p>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>Metro Grace International Church</h3>
+                        <p>123 Grace Avenue<br>City, State 12345</p>
+                        <p><strong>Parking:</strong> Free parking available in our lot and on surrounding streets</p>
+                        <p><strong>Accessibility:</strong> Wheelchair accessible entrance and facilities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-pages">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="youth.html">Youth</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@metrograce.org</p>
+                <p>Address: 123 Grace Avenue, City, State 12345</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Metro Grace International Church</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
